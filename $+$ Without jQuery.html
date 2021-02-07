@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Down/Up - Add/Remove Class</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #cb9857;
+            transition: 1s;
+        }
+
+        nav.scrollNav {
+            height: 60px;
+            background-color: #02846c;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .nav-content {
+            padding: 0 100px;
+        }
+        
+        img.logo {
+            height: 150px;
+            background: #cb9857;
+            padding: 20px;
+            transition: 1s;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        
+        nav.scrollNav img.logo {
+            height: 40px;
+            padding: 10px;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-content">
+            <img src="logo.png" class="logo" alt="">
+        </div>
+    </nav>
+    <div class="content">
+        <img src="image.jpg" alt="">
+        <h1>Content Start</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content End</h1>
+        <!--        <img src="web-site-screenshot.png" alt="">-->
+    </div>
+    <script>
+        window.onscroll = function() {
+            var nav = document.getElementById('navbar');
+            if (window.pageYOffset > 500) {
+                nav.classList.add("scrollNav");
+            } else {
+                nav.classList.remove("scrollNav");
+            }
+        }
+    </script>
+</body></html>
